@@ -1,38 +1,379 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: url(./../public/bgmovie.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#datVe .hang {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+#datVe .hangTitle {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+#datVe .hangTitle .hangTitleItem {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-right: 5px;
+}
+#datVe .hangTitle .soGhe {
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  background-color: blueviolet;
+  color: white;
+  margin: 0 5px;
+}
+#datVe .hang .soGheDaChon {
+  background-color: yellow;
+  border-radius: 5px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+}
+#datVe .hang .soGheDaDat {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#datVe .hang .hangItem {
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+#datVe .hang button {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#datVe .hang button:hover {
+  background-color: blue;
+  border: 1px solid blue;
+
+  color: white;
+}
+#manHinh {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  background-color: orange;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+table#myTable {
+  border-collapse: collapse;
+  width: 400px;
+  margin: 20px auto 0;
+  font-size: 12px;
+}
+#myTable thead tr th {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  height: 30px;
+}
+#myTable thead tr th:nth-child(2) {
+  text-align: right;
+}
+#myTable tbody tr td {
+  border-bottom: 1px solid silver;
+  height: 30px;
+}
+#myTable tbody tr td:first-child {
+  text-align: center;
+}
+#myTable tbody tr td:nth-child(2) {
+  text-align: right;
+}
+#myTable tbody tr td:last-child {
+  text-align: center;
+}
+#myTable tbody tr:nth-child(even) {
+  background-color: rgb(237, 237, 237);
+}
+#myTable tfoot tr th {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  height: 30px;
+}
+#myTable tfoot tr th:nth-child(2) {
+  text-align: right;
+}
+#myTable .huyGhe {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#myTable .huyGhe:hover {
+  background-color: blueviolet;
+}
+#myTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#myTable th,
+#myTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#myTable th {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#myTable th:first-child,
+#myTable td:first-child {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#myTable td:first-child {
+  font-weight: bold;
+  color: #007bff; /* Màu văn bản nổi bật */
+  background-color: white; /* Màu nền trắng */
+  /* border: 2px solid #007bff; Khung đường viền màu xanh cho mã ghế */
+}
+#myTable td:nth-child(2) {
+  font-weight: bold;
+  color: #007bff; /* Màu văn bản nổi bật */
+  background-color: white; /* Màu nền trắng */
+  /* border: 2px solid #007bff; Khung đường viền màu xanh cho mã ghế */
+}
+#myTable td:last-child {
+  font-weight: bold;
+  color: red; /* Màu văn bản nổi bật */
+  background-color: white; /* Màu nền trắng */
+  /* border: 2px solid red; Khung đường viền màu đỏ cho giá tiền */
+}
+
+#myList {
+  width: 430px;
+  max-height: 620px;
+  overflow-y: auto;
+}
+#myList .gioHang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 80px;
+  margin: 0 auto;
+}
+#myList .gioHang .gioHangContent {
+  color: yellow;
+  font-size: 60px;
+  position: relative;
+}
+#myList .gioHang .soLuong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+#xacNhan {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#xacNhan button {
+  margin-top: 5px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  width: 400px;
+  height: 34px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#xacNhan button:hover {
+  background-color: red;
+}
+
+#xacNhanContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+#formInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid silver;
+}
+#formInput input {
+  height: 30px;
+  width: 300px;
+  margin: 5px 0 0 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+#huyTatCa button {
+  background-color: yellow !important;
+  font-size: 20px;
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  height: 34px;
+  padding: 0 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+#huyTatCa button:hover {
+  background-color: red !important;
+  color: white;
+  border: none;
+}
+
+#ghiChu {
+  margin: 20px 0;
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#ghiChu span {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#ghiChu .gheTrong::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid blueviolet;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+#ghiChu .daChon::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: yellow;
+  border: 1px solid blueviolet;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+#ghiChu .daDat::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border: 1px solid blueviolet;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+#khachDatVe {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 400px;
+}
+#khachDatVe h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+#khachDatVe p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+}
+#khachDatVe table {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  border-collapse: collapse;
+}
+#khachDatVe table tbody tr:nth-child(even) {
+  background-color: rgb(237, 237, 237);
+}
+#khachDatVe table tr th {
+  background-color: rgb(50, 50, 50);
   color: white;
+  padding: 5px 0;
 }
-
-.App-link {
-  color: #61dafb;
+#khachDatVe table tr th:last-child {
+  text-align: right;
+  padding-right: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#khachDatVe table tr td {
+  padding: 5px 0;
+}
+#khachDatVe table tr td:last-child {
+  text-align: right;
+  padding-right: 20px;
+}
+#quanly {
+  background-color: rgba(255, 255, 255, 0.8); /* Màu nền với độ trong suốt */
+  padding: 20px; /* Khoảng cách bên trong phần danh cho quản lý */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bóng đổ */
+  border-radius: 10px; /* Đường viền bo góc */
 }
