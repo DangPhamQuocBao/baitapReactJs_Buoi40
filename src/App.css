@@ -184,21 +184,18 @@ table#myTable {
 
 #myTable td:first-child {
   font-weight: bold;
-  color: #007bff; /* Màu văn bản nổi bật */
-  background-color: white; /* Màu nền trắng */
-  /* border: 2px solid #007bff; Khung đường viền màu xanh cho mã ghế */
+  color: #007bff;
+  background-color: white;
 }
 #myTable td:nth-child(2) {
   font-weight: bold;
-  color: #007bff; /* Màu văn bản nổi bật */
-  background-color: white; /* Màu nền trắng */
-  /* border: 2px solid #007bff; Khung đường viền màu xanh cho mã ghế */
+  color: #007bff;
+  background-color: white;
 }
 #myTable td:last-child {
   font-weight: bold;
-  color: red; /* Màu văn bản nổi bật */
-  background-color: white; /* Màu nền trắng */
-  /* border: 2px solid red; Khung đường viền màu đỏ cho giá tiền */
+  color: red;
+  background-color: white;
 }
 
 #myList {
@@ -372,8 +369,8 @@ table#myTable {
   padding-right: 20px;
 }
 #quanly {
-  background-color: rgba(255, 255, 255, 0.8); /* Màu nền với độ trong suốt */
-  padding: 20px; /* Khoảng cách bên trong phần danh cho quản lý */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bóng đổ */
-  border-radius: 10px; /* Đường viền bo góc */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
